@@ -1,6 +1,6 @@
 configs
 
-- [] eslint
+- [ ] eslint
 - [x] vim
-- [] vscode
-- [] zsh
+- [ ] vscode
+- [ ] zsh
