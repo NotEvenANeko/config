@@ -107,12 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export http_proxy=http://127.0.0.1:20000
-export https_proxy=$http_proxy
-
 export GPG_TTY=$(tty)
-
-neofetch
 
 eval $(thefuck --alias)
 
