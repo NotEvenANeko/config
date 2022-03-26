@@ -6,7 +6,7 @@ sudo --version > /dev/null 2> /dev/null
 isSudo=$?
 
 if [ "$isSudo" != 0 ]; then
-  echo "you needs sudo to run this script."
+  echo "you need sudo to run this script."
   exit 1
 fi
 
