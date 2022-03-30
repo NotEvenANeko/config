@@ -12,7 +12,7 @@ fi
 
 
 if [ "$isApt" == 0 ]; then
-  sudo apt update && apt upgrade -y
+  sudo apt update && sudo apt upgrade -y
   sudo apt install zsh git curl wget neofetch thefuck vim -y
 elif [ "$isPacman" == 0 ]; then
   sudo pacman -Sy --noconfirm --needed which base zsh git curl wget neofetch thefuck vim
