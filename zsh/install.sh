@@ -1,3 +1,5 @@
+#!/bin/sh
+
 apt --version > /dev/null 2> /dev/null
 isApt=$?
 pacman --version > /dev/null 2> /dev/null
@@ -5,16 +7,16 @@ isPacman=$?
 sudo --version > /dev/null 2> /dev/null
 isSudo=$?
 
-if [ "$isSudo" != 0 ]; then
+if [ "$isSudo" -ne 0 ]; then
   echo "you need sudo to run this script."
   exit 1
 fi
 
 
-if [ "$isApt" == 0 ]; then
+if [ "$isApt" -eq 0 ]; then
   sudo apt update && sudo apt upgrade -y
   sudo apt install zsh git curl wget neofetch thefuck vim -y
-elif [ "$isPacman" == 0 ]; then
+elif [ "$isPacman" -eq 0 ]; then
   sudo pacman -Sy --noconfirm --needed which base zsh git curl wget neofetch thefuck vim
 fi
 
