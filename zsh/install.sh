@@ -44,8 +44,7 @@ curl -so $HOME/.vimrc https://raw.githubusercontent.com/Cattttttttt/config/maste
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-chsh -s $(which zsh)
-
 if [ -z "$isUnattended" ]; then
+  chsh -s $(which zsh)
   zsh
 fi
