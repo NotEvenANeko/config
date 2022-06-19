@@ -1,0 +1,11 @@
+{
+  "name": "@notevenaneko/prettier-config",
+  "version": "1.0.0",
+  "description": "A personal prettier config.",
+  "keywords": ["prettier", "config"],
+  "main": "index.js",
+  "homepage": "https://github.com/Cattttttttt/config",
+  "repository": "https://github.com/Cattttttttt/config",
+  "author": "Neko <neko@qwq.icu>",
+  "license": "MIT"
+}
