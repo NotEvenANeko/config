@@ -18,7 +18,16 @@
 
 ## Prettier
 
-TODO:
+安装: `yarn add -D @notevenaneko/prettier-config`
+
+使用方法:
+
+```js
+module.exports = {
+  ...require('@notevenaneko/prettier-config'),
+  /* your rules */
+}
+```
 
 ## zsh & ohmyzsh
 
