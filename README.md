@@ -12,7 +12,8 @@
 - [x] React: `extends: ['@notevenaneko/eslint-config', '@notevenaneko/eslint-config/react']`
 - [x] Vue: `extends: ['@notevenaneko/eslint-config/ts', '@notevenaneko/eslint-config/vue']`
 - [x] Prettier: `extends: [/* your config */, '@notevenaneko/eslint-config/prettier']`
-- [ ] NextJS
+- [x] NextJS: `extends: ['@notevenaneko/eslint-config', '@notevenaneko/eslint-config/next']`
+- [x] Jest: `extends: [/* your config */, '@notevenaneko/eslint-config/jest']`
 - [ ] Node
 - [ ] NestJS
 
