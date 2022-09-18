@@ -42,6 +42,6 @@ Profile 文件
 
 `.vimrc`
 
-## Vscode
+## neofetch
 
-我为啥要放个 vscode 设置...
+乱改的 neofetch
