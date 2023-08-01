@@ -1,4 +1,6 @@
-module.exports = {
+import { defineConfig } from 'eslint-define-config';
+
+export = defineConfig({
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -10,4 +12,4 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
   ],
-};
+});

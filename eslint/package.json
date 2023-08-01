@@ -6,13 +6,24 @@
     "eslint",
     "config"
   ],
-  "main": "index.js",
+  "type": "commonjs",
+  "exports": {
+    ".": "./dist/index.js",
+    "./base": "./dist/base.js",
+    "./jest": "./dist/jest.js",
+    "./next": "./dist/next.js",
+    "./prettier": "./dist/prettier.js",
+    "./react": "./dist/react.js",
+    "./vue": "./dist/vue.js",
+    "./flat": "./dist/flat/index.js"
+  },
   "homepage": "https://github.com/Cattttttttt/config",
   "repository": "https://github.com/Cattttttttt/config",
   "author": "Neko <neko@qwq.icu>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "tsup"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.28.0",
@@ -28,11 +39,23 @@
   },
   "devDependencies": {
     "eslint": "^8.18.0",
-    "prettier": "^2.7.1"
+    "eslint-define-config": "^1.22.0",
+    "prettier": "^2.7.1",
+    "typescript": "^5.1.6"
   },
   "peerDependencies": {
     "eslint": ">=8.18.0",
     "prettier": ">=2.7.1",
     "typescript": ">=4.7.4"
+  },
+  "tsup": {
+    "entry": [
+      "./src/*.ts"
+    ],
+    "clean": true,
+    "format": [
+      "cjs"
+    ],
+    "outDir": "./dist"
   }
 }

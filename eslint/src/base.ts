@@ -1,8 +1,6 @@
-module.exports = {
-  env: {
-    es2022: true,
-  },
+import { defineConfig } from 'eslint-define-config';
 
+export = defineConfig({
   parser: '@typescript-eslint/parser',
 
   parserOptions: {
@@ -12,4 +10,4 @@ module.exports = {
   plugins: ['@typescript-eslint'],
 
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
-};
+});
