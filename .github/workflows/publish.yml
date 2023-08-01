@@ -1,0 +1,40 @@
+name: Build and ublish
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'prettier/**'
+      - 'eslint/**'
+      - '!eslint/**/*.md'
+      - '!prettier/**/*.md'
+
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run --filter "...[${{ github.event.before }}]" --changed-files-ignore-pattern="**/*.md" build
+
+      - name: Publish
+        run: pnpm publish --filter "...[${{ github.event.before }}]" --changed-files-ignore-pattern="**/*.md" --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
