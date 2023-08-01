@@ -17,8 +17,8 @@
     "./vue": "./dist/vue.js",
     "./flat": "./dist/flat/index.js"
   },
-  "homepage": "https://github.com/Cattttttttt/config",
-  "repository": "https://github.com/Cattttttttt/config",
+  "homepage": "https://github.com/NotEvenANeko/config",
+  "repository": "https://github.com/NotEvenANeko/config",
   "author": "Neko <neko@qwq.icu>",
   "license": "MIT",
   "scripts": {

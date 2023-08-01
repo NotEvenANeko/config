@@ -36,11 +36,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-curl -so $HOME/.zshrc https://raw.githubusercontent.com/Cattttttttt/config/master/zsh/.zshrc
+curl -so $HOME/.zshrc https://raw.githubusercontent.com/NotEvenANeko/config/master/zsh/.zshrc
 
-curl -so $HOME/.p10k.zsh https://raw.githubusercontent.com/Cattttttttt/config/master/zsh/.p10k.zsh
+curl -so $HOME/.p10k.zsh https://raw.githubusercontent.com/NotEvenANeko/config/master/zsh/.p10k.zsh
 
-curl -so $HOME/.vimrc https://raw.githubusercontent.com/Cattttttttt/config/master/vim/.vimrc
+curl -so $HOME/.vimrc https://raw.githubusercontent.com/NotEvenANeko/config/master/vim/.vimrc
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 

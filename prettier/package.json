@@ -6,9 +6,11 @@
     "prettier",
     "config"
   ],
-  "main": "index.js",
-  "homepage": "https://github.com/Cattttttttt/config",
-  "repository": "https://github.com/Cattttttttt/config",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "homepage": "https://github.com/NotEvenANeko/config",
+  "repository": "https://github.com/NotEvenANeko/config",
   "author": "Neko <neko@qwq.icu>",
   "license": "MIT",
   "scripts": {

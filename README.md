@@ -2,7 +2,7 @@
 
 ## Eslint
 
-[在这](https://github.com/Cattttttttt/config/tree/master/eslint)
+[在这](https://github.com/NotEvenANeko/config/tree/master/eslint)
 
 安装: `yarn add -D @notevenaneko/eslint-config`
 
@@ -27,12 +27,12 @@
 module.exports = {
   ...require('@notevenaneko/prettier-config'),
   /* your rules */
-}
+};
 ```
 
 ## zsh & ohmyzsh
 
-安装: `sh -c '$(curl -fsSL https://raw.githubusercontent.com/Cattttttttt/config/master/zsh/install.sh)'`
+安装: `sh -c '$(curl -fsSL https://raw.githubusercontent.com/NotEvenANeko/config/master/zsh/install.sh)'`
 
 ## iTerm2
 
