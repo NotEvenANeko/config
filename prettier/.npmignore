@@ -1,6 +1,5 @@
 .gitignore
 node_modules
 src
-README.md
 tsconfig.json
 .npmignore
